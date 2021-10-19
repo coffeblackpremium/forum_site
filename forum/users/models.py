@@ -2,5 +2,13 @@ from django.db import models
 
 # Create your models here.
 
-class Post(models.Model):
-    pass
+class Usuario(models.Model):
+    SEXO_CHOICES = [
+        ['F', 'Feminino'],
+        ['M', 'Masculino'],
+        ['N', 'Nenhuma das Opções']
+    ]
+
+    name = models.CharField(max_length=20, null=False)
+    email = models.EmailField(null=False)
+    sexo = models.CharField(max_length=1, choices=SEXO_CHOICES)
