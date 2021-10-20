@@ -7,10 +7,32 @@
     <title>Register</title>
 </head>
 <body>
-    <form method="POST">
-        {{form.as_p}}
-    </form>
-    <hr>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Registro de Usuario</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome">Nome Completo</label>
+                </div>
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" class="inputUser" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="nome">Telefone</label>
+                </div>
+                <p>Sexo:</p>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                
+            </fieldset>
+        </form>
+    </div>
     <footer> this is Footer</footer>
 </body>
 </html>
